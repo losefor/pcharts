@@ -28,10 +28,8 @@
   svg .outline {
     stroke: #378fe9;
     stroke-width: 5px;
-    /* stroke-dasharray: 1ch 4px; */
     stroke-dashoffset: calc(1ch + 4px);
     fill: transparent;
-    /* animation: slide 1s linear infinite; */
   }
 
   svg .area {

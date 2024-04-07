@@ -1,11 +1,20 @@
-<h1>svg is my bitch :P</h1>
-<br>
-
-<slot/>
+<div class="center">
+  <slot />
+</div>
 
 <style>
-:global(*) {
-  padding: 0;
-  margin: 0;
-}
+  :global(*) {
+    padding: 0;
+    margin: 0;
+  }
+
+  :global(body) {
+    font-family: Arial, sans-serif;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 </style>

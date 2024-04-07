@@ -1,7 +1,20 @@
 <script lang="ts">
-  import Graph from "$lib/graph.svelte";
+  import AreaChart from "$lib/area-chart.svelte";
 
-  const data = [150, 1000, 100, 500, 100, 100, 500];
+  const data = [100, 1000, 200, 500, 1500];
 </script>
 
-<Graph {data} />
+<div class="container">
+  <h1>Area chart</h1>
+  <AreaChart {data} width={800} />
+</div>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+</style>
